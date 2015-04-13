@@ -7,6 +7,6 @@ Aim is develop user-friendly, professional-grade resource for [understanding] CS
 
 Developing using:
 
-"CSS3: Pushing the Limits" by Stephen Greig (2013).  [An excellent resource!]
+"CSS3: Pushing the Limits" by Stephen Greig (2013).  [An excellent resource!],
 W3C CSS documentation 
 
