@@ -5,4 +5,8 @@ No description yet.
 
 Aim is develop user-friendly, professional-grade resource for [understanding] CSS(3).  Not a tutorial. 
 
-Working from the fabulous text "CSS3: Pushing the Limits" by Stephen Greig (2013).  
+Developing using:
+
+"CSS3: Pushing the Limits" by Stephen Greig (2013).  [An excellent resource!]
+W3C CSS documentation 
+
