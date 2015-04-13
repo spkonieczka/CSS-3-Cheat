@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<style type="text/css">
+
+		body {
+			font-family: arial;
+		}
+
+		p {
+			color: black;
+			font-size: 15px;
+		}
+
+		.box1 {
+			width: 100%;
+			height: auto;
+			background-color: gray;
+		}
+		
+		.box2 {
+			width: 100%;
+			height: auto;
+			background-color: lightsteelblue;
+		}
+		
+/* ligatures 
+
+	-webkit-font-variant-ligatures   Webkit browsers (Chrome, Safari and Opera 15+) are, 									at the time of writing, the only browsers to 
+										support this property. 
+
+	common-ligatures
+	no-common-ligatures
+	discretionary-ligatures
+	-discretionary-ligatures
+	historical-ligatures
+	no-historical-ligatures
+	contextual
+	no-contextual
+
+*/
+
+	p.ligatures {
+		font-variant-ligatures: ;
+	}
+
+
+/* kerning 
+
+	webkit-font-variant-ligatures
+
+	normal
+	none
+	auto
+
+
+*/
+
+	p.kerning {
+		font-kerning:;
+	}
+
+/* Text Rendering 
+
+	Actaully SVG property; note camale casing
+
+	optimizeSpeed
+	geometricPrecision
+	optimizeLegibility
+
+	Note for Firefox: 	default optimizeLegibility when text=>20px;
+						optimizeLegibility for all other sizes
+
+*/
+
+	p.text-rendering {
+		text-rendering: ;
+	} 
+
+
+
+/* font-size-adjustment 
+
+	numeric floating point value, see page 33 for caluclating
+
+	Firefox support. Others?
+
+*/
+	
+	p.font-size-adjustment {
+		font-size-adjustment: ;
+	}
+
+
+/* Font Stretch 
+
+	ultra-condensed
+	extra-condensed
+	condensed
+	semi-condensed 
+	normal
+	semi-expanded
+	expanded
+	extra-expanded 
+	ultra-expanded
+
+does not artificially squash or stretch 
+*/
+
+
+	p.font-stretch {
+		font-stretch: ;
+	}
+
+
+/* font-synthesis
+
+	none
+	weight
+	style
+
+	allows you to specify whether or not a font can be styled synthetically in terms of weight and style (italics
+
+	not currently supported
+
+*/
+
+	p.font-synthesis {
+		font-synthesis: ;
+	}
+
+
+/* Font Variant Numeric 
+
+	old-style-nums			below baseline
+	lining nums				on baseline
+
+	stacked-fractions		1|3
+	diagonal-fractions		1/3
+
+	proportional-nums		aligns by first digit
+	tabular-nums			aligns by value seperator (e.g., \')
+
+	not currently supported
+
+*/
+
+	p.font-variant-numeric {
+		font-variant-numeric: ;
+	}
+	
+
+/* Hyphens 
+
+	manual
+	auto
+	none
+
+	requires "lang" meta tag
+
+	vendor prefix required
+
+*/
+
+	p.hyphens {
+		hyphens: ;
+	}
+
+
+/* writing-mode 
+
+	text direction 
+
+	ltr 	left to right
+	rtl 	right to left
+
+	text property 
+
+	horizontal-tb	top to bottom
+	vertical-rl		start from right side (gnihsup)
+	vertical-lr		start from left side   (pushing)
+
+	text orientation 
+
+	upright				initial value
+	sideways-right		90 clockwise
+	sideways-left		90 counter-clockwise
+
+	not supported
+
+*/
+	.p.writing-mode_text-direction {
+		writing-mode: ;
+	}
+
+/* Text Decoration 
+
+	text-decoration-line
+
+	none
+	underline
+	overline
+	line=through
+
+	text-decoration-color
+
+	any color value
+
+	text-decoration-style
+
+	solid
+	double
+	dotted
+	dashed
+	wavy
+
+	short hand: text-decoration
+
+	supported in FF with -moz
+*/
+
+
+/* Text background masking 
+
+see page 41 if not covered in image section place here
+
+h1 {
+       font: 300px Bebas;
+       background: url(bg.jpg);
+       -webkit-background-clip: text;
+       color: transparent;
+	
+	/* non-web-kit */
+
+       -webkit-text-fill-color: transparent;
+		color: #00;
+}
+
+*/
+
+
+/* Text shaddow 
+
+	1px 		1px 		3px 		#00
+	horizontal	vertical 	blur rad 	shaddow color
+
+	3-D
+
+		h1 {
+	       text-shadow: 0 1px 0 #ccc,
+						0 2px 0 #c5c5c5,
+						0 3px 0 #bbb,
+						0 4px 0 #b5b5b5,
+						0 5px 0 #aaa,
+						0 6px 0 #a5a5a5;
+
+						0 7px 3px rgba(0, 0, 0, 0.3),
+						0 10px 10px rgba(0, 0, 0, 0.2),
+						0 10px 20px rgba(0, 0, 0, 0.15),
+						0 20px 20px rgba(0, 0, 0, 0.1);
+		}
+
+	Outer Glow
+
+		h1 {
+			text-shadow: 	0 0 10px #fff,
+		                    0 0 20px rgba(255, 255, 255, 0.3),
+
+		                    0 0 30px rgba(33, 207, 255, 1),
+		                    0 0 40px rgba(33, 207, 255, 0.8),
+		                    0 0 60px rgba(33, 207, 255, 0.5),
+		}                    0 0 100px rgba(33, 207, 255, 0.3);
+
+
+*/
+
+
+
+
+
+
+
+	</style>
+
+	</head>
+
+	<body>
+
+<div class="box1">
+	
+<p classs="ligatures">This is a paragraph under heading one. </p>
+
+	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+	<p class="">Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+
+	<p class="">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+	<p class="">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p classs="">This is a paragraph under heading one. </p>
+
+	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+	<p class="">Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+
+	<p class="">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+	<p class="">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+
+<p class=""><a href="linkone.org" title="link">This is link ONE</a></p>
+
+</div>
+
+<div class="box2">
+
+<p classs="">This is a paragraph under heading one. </p>
+
+	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+	<p class="">Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+
+	<p class="">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+	<p class="">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p classs="">This is a paragraph under heading one. </p>
+
+	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+	<p class="">Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+
+	<p class="">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+	<p class="">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+</div>
+
+
+
+
+	</body>
+
+</html>
+
+
+	
+		}
